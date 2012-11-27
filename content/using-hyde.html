@@ -1,0 +1,119 @@
+---
+title: Page name
+subtitle: Columns template
+description: Test description
+---
+
+{% extends "topbar.j2" %}
+{% block css %}
+<style type="text/css">
+  body {
+    padding-top: 60px;
+  }
+</style>
+{% endblock css %}
+
+{% block content %}
+
+<p>
+to create a new blog post use
+
+hyde gen --regen
+
+hyde serve
+</p>
+
+<p>Four options are available: top, right, bottom, and left aligned.</p>
+        <div class="bs-docs-example bs-docs-example-popover">
+          <div class="popover top">
+            <div class="arrow"></div>
+            <h3 class="popover-title">Popover top</h3>
+            <div class="popover-content">
+              <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+            </div>
+          </div>
+
+          <div class="popover right">
+            <div class="arrow"></div>
+            <h3 class="popover-title">Popover right</h3>
+            <div class="popover-content">
+              <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+            </div>
+          </div>
+
+          <div class="popover bottom">
+            <div class="arrow"></div>
+            <h3 class="popover-title">Popover bottom</h3>
+            <div class="popover-content">
+              <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+            </div>
+          </div>
+
+          <div class="popover left">
+            <div class="arrow"></div>
+            <h3 class="popover-title">Popover left</h3>
+            <div class="popover-content">
+              <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+        </div>
+        <p>No markup shown as popovers are generated from JavaScript and content within a <code>data</code> attribute.</p>
+
+        <h3>Live demo</h3>
+        <div class="bs-docs-example" style="padding-bottom: 24px;">
+          <a href="#" class="btn btn-large btn-danger" rel="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">Click to toggle popover</a>
+        </div>
+
+        <h4>Four directions</h4>
+        <div class="bs-docs-example tooltip-demo">
+          <ul class="bs-docs-tooltip-examples">
+            <li><a href="#" class="btn" rel="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on top">Popover on top</a></li>
+            <li><a href="#" class="btn" rel="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on right">Popover on right</a></li>
+            <li><a href="#" class="btn" rel="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on bottom">Popover on bottom</a></li>
+            <li><a href="#" class="btn" rel="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on left">Popover on left</a></li>
+          </ul>
+        </div>
+
+    <div class="accordion-group">
+      <div class="accordion-heading"><a class="accordion-toggle" href="#data_example" data-toggle="collapse" data-parent="#accordion2">Sample Data 2</a>
+      </div>
+      <div id="data_example" class="accordion-body collapse">
+        <div class="accordion-inner">
+          <pre>object id, right ascension, declination, uv, green, red, infrared, z
+            587722952230174996,236.24709547,-0.4752636,19.530645,18.288212,17.734669,17.444643,17.206362
+            587722952230175035,236.28687056,-0.51800318,19.312582,18.003527,17.38941,17.001949,16.743832
+            587722952230175138,236.34218191,-0.46702283,19.567039,18.024569,17.108435,16.635918,16.25563</pre>
+          </div>
+        </div>
+    </div>
+
+
+<h1>My First JavaScript</h1>
+<p id="demo">This is a paragraph.</p>
+
+<button type="button" onclick="displayDate()">Display Date</button>
+
+
+<!-- {% syntax python %}
+import iopro
+import StringIO
+
+data = '1,abc,inf\n2,NA,9.9'
+adapter = iopro.text_adapter(StringIO.StringIO(data), parser='csv', field_names=False)
+adapter.set_field_types({1:'S3', 2:'f4'})
+
+# Define list of strings for each field that represent missing values
+adapter.set_missing_values({1:['NA'], 2:['inf']})
+
+# Set fill value for missing values in each field
+adapter.set_fill_values({1:'xxx', 2:999.999})
+
+adapter[:]
+>>> array([(' abc', 999.9990234375), ('xxx', 9.899999618530273)], 
+          dtype=[('f0', 'S4'), ('f1', 'f4')])
+
+{% endsyntax %} -->
+
+{% endblock content %}
