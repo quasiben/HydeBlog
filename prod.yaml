@@ -1,2 +1,8 @@
 extends: site.yaml
 mode: production
+
+publisher:
+    github:
+        type: hyde.ext.publishers.dvcs.Git
+        path: ./
+        url: git@github.com:quasiben/HydeBlog.git

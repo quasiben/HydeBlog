@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="">
+    <title>Page name | BigFat Integral</title>
+    <meta name="description" content="Test description">
+    <meta name="author" content="">
+
+        <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+        <link href="/media/css/bootstrap.css" rel="stylesheet">
+    <link href="/media/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/media/css/bootstrap-responsive.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+ 
+        <style type="text/css">
+  body {
+    padding-top: 60px;
+  }
+</style>
+
+
+        
+                  </head>
+
+  <body class="using-hyde">
+
+    <div class="topbar">
+    <div class="fill">
+    <div class="container">
+      <a class="brand" href="index.html">BigFat Integral</a>
+            <ul class="nav">
+<li><a href="index.html">Home</a></li><li><a href="landing.html">Landing</a></li><li class="active"><a href="using-hyde.html">UsingHyde</a></li></ul>
+    </div>
+  </div>
+  </div>
+
+
+    <div class="container" id="top">
+      
+      <div class="content">
+                
+<p>
+to create a new blog post use
+
+hyde gen --regen
+
+hyde serve
+</p>
+
+<p>Four options are available: top, right, bottom, and left aligned.</p>
+        <div class="bs-docs-example bs-docs-example-popover">
+          <div class="popover top">
+            <div class="arrow"></div>
+            <h3 class="popover-title">Popover top</h3>
+            <div class="popover-content">
+              <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+            </div>
+          </div>
+
+          <div class="popover right">
+            <div class="arrow"></div>
+            <h3 class="popover-title">Popover right</h3>
+            <div class="popover-content">
+              <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+            </div>
+          </div>
+
+          <div class="popover bottom">
+            <div class="arrow"></div>
+            <h3 class="popover-title">Popover bottom</h3>
+            <div class="popover-content">
+              <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+            </div>
+          </div>
+
+          <div class="popover left">
+            <div class="arrow"></div>
+            <h3 class="popover-title">Popover left</h3>
+            <div class="popover-content">
+              <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+        </div>
+        <p>No markup shown as popovers are generated from JavaScript and content within a <code>data</code> attribute.</p>
+
+        <h3>Live demo</h3>
+        <div class="bs-docs-example" style="padding-bottom: 24px;">
+          <a href="#" class="btn btn-large btn-danger" rel="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">Click to toggle popover</a>
+        </div>
+
+        <h4>Four directions</h4>
+        <div class="bs-docs-example tooltip-demo">
+          <ul class="bs-docs-tooltip-examples">
+            <li><a href="#" class="btn" rel="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on top">Popover on top</a></li>
+            <li><a href="#" class="btn" rel="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on right">Popover on right</a></li>
+            <li><a href="#" class="btn" rel="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on bottom">Popover on bottom</a></li>
+            <li><a href="#" class="btn" rel="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on left">Popover on left</a></li>
+          </ul>
+        </div>
+
+    <div class="accordion-group">
+      <div class="accordion-heading"><a class="accordion-toggle" href="#data_example" data-toggle="collapse" data-parent="#accordion2">Sample Data 2</a>
+      </div>
+      <div id="data_example" class="accordion-body collapse">
+        <div class="accordion-inner">
+          <pre>object id, right ascension, declination, uv, green, red, infrared, z
+            587722952230174996,236.24709547,-0.4752636,19.530645,18.288212,17.734669,17.444643,17.206362
+            587722952230175035,236.28687056,-0.51800318,19.312582,18.003527,17.38941,17.001949,16.743832
+            587722952230175138,236.34218191,-0.46702283,19.567039,18.024569,17.108435,16.635918,16.25563</pre>
+          </div>
+        </div>
+    </div>
+
+
+<h1>My First JavaScript</h1>
+<p id="demo">This is a paragraph.</p>
+
+<button type="button" onclick="displayDate()">Display Date</button>
+
+
+<!-- <div class="codebox"><figure class="code"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">iopro</span><br /><span class="kn">import</span> <span class="nn">StringIO</span><br />&nbsp;<br /><span class="n">data</span> <span class="o">=</span> <span class="s">&#39;1,abc,inf</span><span class="se">\n</span><span class="s">2,NA,9.9&#39;</span><br /><span class="n">adapter</span> <span class="o">=</span> <span class="n">iopro</span><span class="o">.</span><span class="n">text_adapter</span><span class="p">(</span><span class="n">StringIO</span><span class="o">.</span><span class="n">StringIO</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="n">parser</span><span class="o">=</span><span class="s">&#39;csv&#39;</span><span class="p">,</span> <span class="n">field_names</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><br /><span class="n">adapter</span><span class="o">.</span><span class="n">set_field_types</span><span class="p">({</span><span class="mi">1</span><span class="p">:</span><span class="s">&#39;S3&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="s">&#39;f4&#39;</span><span class="p">})</span><br />&nbsp;<br /><span class="c"># Define list of strings for each field that represent missing values</span><br /><span class="n">adapter</span><span class="o">.</span><span class="n">set_missing_values</span><span class="p">({</span><span class="mi">1</span><span class="p">:[</span><span class="s">&#39;NA&#39;</span><span class="p">],</span> <span class="mi">2</span><span class="p">:[</span><span class="s">&#39;inf&#39;</span><span class="p">]})</span><br />&nbsp;<br /><span class="c"># Set fill value for missing values in each field</span><br /><span class="n">adapter</span><span class="o">.</span><span class="n">set_fill_values</span><span class="p">({</span><span class="mi">1</span><span class="p">:</span><span class="s">&#39;xxx&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="mf">999.999</span><span class="p">})</span><br />&nbsp;<br /><span class="n">adapter</span><span class="p">[:]</span><br /><span class="o">&gt;&gt;&gt;</span> <span class="n">array</span><span class="p">([(</span><span class="s">&#39; abc&#39;</span><span class="p">,</span> <span class="mf">999.9990234375</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;xxx&#39;</span><span class="p">,</span> <span class="mf">9.899999618530273</span><span class="p">)],</span> <br />          <span class="n">dtype</span><span class="o">=</span><span class="p">[(</span><span class="s">&#39;f0&#39;</span><span class="p">,</span> <span class="s">&#39;S4&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;f1&#39;</span><span class="p">,</span> <span class="s">&#39;f4&#39;</span><span class="p">)])</span><br /></pre></div><br /><figcaption>Python</figcaption></figure></div>
+
+ -->
+
+      </div>
+
+      <footer>
+                <p>Created by <a href="http://bigfat.dynsdns.org">Your Name Here</a></p>
+              </footer>
+
+          </div> <!-- /container -->
+
+     
+    
+                    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    
+              <script src="/media/js/libs/bootstrap-collapse.js"></script>
+      <script src="/media/js/libs/bootstrap-popover.js"></script>
+
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+            
+
+    <!--[if lt IE 7 ]>
+      <script src="/media/js/libs/dd_belatedpng.js"></script>
+      <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+    <![endif]-->
+
+
+
+      </body>
+</html>
